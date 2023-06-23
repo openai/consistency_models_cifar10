@@ -29,7 +29,7 @@ pip install -e .
 ```
 Then manually install jax by running
 ```sh
-pip install "jax[cuda11_cudnn82]" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
+pip install --upgrade "jax[cuda11_pip]" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
 ```
 The code assumes CUDA 11 and cuDNN 8.2. For different CUDA and cuDNN versions, you need to modify the above command accordingly.
 
