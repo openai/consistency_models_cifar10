@@ -14,7 +14,7 @@ setup(
         "tensorboard",
         "absl-py",
         "flax",
-        "jax",
+        "jax==0.4.10",
         "dm-haiku",
         "optax",
         "diffrax",
