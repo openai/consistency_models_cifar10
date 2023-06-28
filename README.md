@@ -29,9 +29,9 @@ pip install -e .
 ```
 Then manually install jax by running
 ```sh
-pip install --upgrade "jax[cuda11_pip]" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
+pip install https://storage.googleapis.com/jax-releases/cuda11/jaxlib-0.4.7+cuda11.cudnn82-cp39-cp39-manylinux2014_x86_64.whl
 ```
-The code assumes CUDA 11 and cuDNN 8.2. For different CUDA and cuDNN versions, you need to modify the above command accordingly.
+The code assumes Python 3.9, JAX 0.4.10, CUDA 11 and cuDNN 8.2. For different Python, CUDA and cuDNN versions, you need to modify the above command accordingly.
 
 # Model training and sampling
 
