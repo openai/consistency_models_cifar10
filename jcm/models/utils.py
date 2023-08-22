@@ -100,7 +100,8 @@ def init_model(rng, config):
         {"params": next(rng), "dropout": next(rng)}, fake_input, fake_label
     )
     # Variables is a `flax.FrozenDict`. It is immutable and respects functional programming
-    init_model_state, initial_params = variables.pop("params")
+    # NOTE: the following line failed when launching EDM
+    init_model_state, initial_params = flax.core.pop(variables, "params")
     return model, init_model_state, initial_params
 
 
